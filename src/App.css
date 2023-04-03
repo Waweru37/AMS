@@ -1,0 +1,166 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 100s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@import './tailwind.css';
+
+.div1{
+  @apply  shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-gray-200 text-black block text-sm font-medium text-gray-700 text-xl hover:text-3xl hover:text-indigo-600;
+}
+
+.div2{
+    @apply bg-gray-100 text-black;
+  }
+
+.button{
+    @apply inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+}
+
+.input{
+    @apply w-auto h-auto;
+}
+
+.html{
+    @apply  w-auto h-auto;
+}
+
+.body{
+    @apply w-auto h-auto;
+}
+
+.form{
+    @apply mt-8 space-y-6;
+}
+
+.form2{
+    @apply shadow-md rounded px-8 pt-6 pb-8 mb-4;
+}
+
+.input1{
+    @apply
+    inline-block appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm w-auto h-auto;
+}
+
+.input2{
+    @apply
+    inline-block appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm w-auto h-auto;
+}
+
+.label1{
+    @apply inline-block block text-sm font-medium text-gray-700 w-auto h-auto;
+}
+
+.label2{
+    @apply inline-block block text-sm font-medium text-gray-700 w-auto h-auto;
+}
+
+.label3{
+    @apply block text-gray-700 text-sm font-bold mb-2 w-auto h-auto;
+}
+
+.textArea1{
+    @apply 
+ inline-block appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm w-auto h-auto;
+}
+
+.h1{
+    @apply inline-block block text-xl font-medium text-indigo-500 w-auto h-auto hover:text-3xl hover:text-indigo-600
+}
+
+.h2{
+    @apply  block text-base font-medium text-indigo-800/100 w-auto h-auto hover:text-xl hover:text-indigo-600
+}
+
+.button2{
+    @apply inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+}
+
+.p1{
+    @apply text-gray-500/100 text-xl hover:text-3xl hover:text-indigo-600 w-auto h-auto;
+}
+
+.p2{
+    @apply text-indigo-200/100 text-xl hover:text-3xl hover:text-indigo-600 w-auto h-auto;
+}
+
+.div3{
+    @apply border-t border-gray-200;
+}
+
+.ul{
+    @apply text-gray-500/100 text-xl list-disc divide-y divide-gray-200 rounded-md border border-gray-200 w-auto h-auto hover:text-3xl hover:text-indigo-600;
+}
+
+.li{
+    @apply text-gray-500/100 text-xl list-decimal flex items-center justify-between py-3 pl-3 pr-4 text-sm w-auto h-auto hover:text-3xl hover:text-indigo-600;
+}
+
+.href{
+    @apply font-medium text-indigo-600 hover:text-indigo-500
+}
+
+.link{
+    @apply font-medium text-indigo-400 hover:text-indigo-500
+}
+
+.CoverLetterLabel{
+    @apply inline-block block text-sm font-medium text-gray-700 w-auto h-auto font-bold;
+}
+
+.CoverLetterInput{
+    @apply rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-6 inline-block block text-sm font-medium text-gray-700 w-auto h-auto align-middle;
+}
+
+.fileUploadLabel{
+    @apply inline-block block text-sm font-medium text-gray-700 w-auto h-auto font-bold;
+}
+
+.fileUploadInput{
+    @apply  shadow appearance-none border rounded w-auto h-auto py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+}
+
+.a{
+    @apply inline-block align-baseline font-bold text-xl text-indigo-500/100 hover:text-3xl hover:text-blue-800;
+}
+
+.input3{
+    @apply
+    shadow appearance-none border rounded w-auto h-auto py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+}
