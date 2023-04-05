@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-function AthleteDetails({ athlete }) {
+const AthleteDetails = ({ athleteId }) => {
+  const [athlete, setAthlete] = useState(null);
+
+  useEffect(() => {
+    const fetchAthlete = async () => {
+      const res = await axios.get(`/api/get/${athleteId}`);
+      setAthlete(res.data[0]);
+    };
+    fetchAthlete();
+  }, [athleteId]);
+
+  if (!athlete) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
-      <h2>{athlete && athlete.name}</h2>
-      <img src={athlete && athlete.photoUrl} alt={athlete && athlete.name} />
-      <p>{athlete && athlete.bio}</p>
-      <h3>Stats</h3>
-      <ul>
-        <li>Height: {athlete && athlete.height}</li>
-        <li>Weight: {athlete && athlete.weight}</li>
-        <li>Age: {athlete && athlete.age}</li>
-        <li>Sport: {athlete && athlete.sport}</li>
-      </ul>
+      <h1>{athlete && athlete.name}</h1>
+      <img src={athlete && athlete.photoUrl} alt={`${athlete && athlete.name} headshot`} />
+      <p>Bio: {athlete && athlete.bio}</p>
+      <p>Height: {athlete && athlete.height}cm</p>
+      <p>Weight: {athlete && athlete.weight}kg</p>
+      <p>Age: {athlete && athlete.age}</p>
+      <p>Sport: {athlete && athlete.sport}</p>
     </div>
   );
-}
+};
 
 export default AthleteDetails;

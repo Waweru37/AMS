@@ -8,6 +8,8 @@ function Navigation(){
         <nav>
         <Link class="link" to='/Login'>Login</Link>
               &emsp;
+              <Link class="link" to='/Home'>Home</Link>
+              &emsp;
         <Link class="link" to='/AthleteDetails'>Athlete Details</Link>
               &emsp;
 		<Link class="link" to='/AddAthlete'>Add Athlete</Link>
